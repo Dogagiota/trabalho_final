@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArquiBot - Assistente de Arquitetura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Personalização da barra de rolagem para ficar sutil */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center font-sans">
+
+    <div class="w-full max-w-md bg-white shadow-2xl rounded-xl overflow-hidden flex flex-col h-[80vh] md:h-[600px]">
+        
+        <div class="bg-slate-800 p-4 flex items-center gap-3 shadow-md z-10">
+            <div class="bg-white p-2 rounded-full">
+                <i data-lucide="hard-hat" class="text-slate-800 w-6 h-6"></i>
+            </div>
+            <div>
+                <h1 class="text-white font-bold text-lg">ArquiBot</h1>
+                <p class="text-slate-300 text-xs flex items-center gap-1">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Online
+                </p>
+            </div>
+        </div>
+
+        <div id="chat" class="flex-1 overflow-y-auto p-4 bg-slate-50 space-y-4">
+            </div>
+
+        <div class="p-4 bg-white border-t border-gray-200">
+            <div class="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2 border focus-within:ring-2 focus-within:ring-slate-500 focus-within:border-transparent transition-all">
+                <input type="text" id="userInput" 
+                       class="flex-1 bg-transparent outline-none text-gray-700 placeholder-gray-400"
+                       placeholder="Descreva seu projeto..."
+                       onkeypress="handleEnter(event)">
+                
+                <button onclick="enviar()" class="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-full transition-transform active:scale-95">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="static/js/chatbot.js"></script>
+    <script>
+        // Inicializa os ícones
+        lucide.createIcons();
+        
+        // Permite enviar com Enter
+        function handleEnter(e) {
+            if (e.key === 'Enter') enviar();
+        }
+    </script>
+</body>
+</html>

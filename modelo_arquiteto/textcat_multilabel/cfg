@@ -1,0 +1,24 @@
+{
+  "labels":[
+    "residencial",
+    "comercial",
+    "corporativo",
+    "paisagismo",
+    "moderno",
+    "tradicional",
+    "minimalista",
+    "contemporaneo",
+    "industrial",
+    "natural",
+    "verde",
+    "rustico",
+    "classico",
+    "futurista",
+    "completo",
+    "interiores",
+    "exterior",
+    "estrutural",
+    "lixo"
+  ],
+  "threshold":0.5
+}
