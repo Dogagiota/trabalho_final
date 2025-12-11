@@ -13,7 +13,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 def home():
-    return FileResponse("index.html")
+    return FileResponse("ia.html")
 
 class Pedido(BaseModel):
     texto: str
