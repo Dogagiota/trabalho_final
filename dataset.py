@@ -823,7 +823,7 @@ treino = [
     {"texto": "Projeto de exteriores de um bar, com área ao ar livre e design rústico.", "tipo": "comercial", "estilo": "rustico", "parte": "exterior"},
     {"texto": "Decoração de interiores de uma clínica com estilo moderno e funcional.", "tipo": "comercial", "estilo": "moderno", "parte": "interiores"},
     {"texto": "Projeto de interiores de uma casa com visual clássico e mobiliário de época.", "tipo": "residencial", "estilo": "classico", "parte": "interiores"},
-    {"texto": "Construção de uma casa sustentável, com telhado verde, obra bruta (verde/estrutural).", "tipo": "residencial", "estilo": "verde", "parte": "estrutural"},
+    {"texto": "Construção de uma casa sustentável, com tel hado verde, obra bruta (verde/estrutural).", "tipo": "residencial", "estilo": "verde", "parte": "estrutural"},
     {"texto": "Projeto completo de uma sede corporativa com design futurista.", "tipo": "corporativo", "estilo": "futurista", "parte": "completo"},
     {"texto": "Decoração da loja com estilo tradicional, focada em produtos artesanais.", "tipo": "comercial", "estilo": "tradicional", "parte": "interiores"},
     {"texto": "Design da área de lazer da empresa com foco em elementos naturais.", "tipo": "corporativo", "estilo": "natural", "parte": "exterior"},
